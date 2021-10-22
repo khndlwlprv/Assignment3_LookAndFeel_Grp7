@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ListingsAdd</title>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/listings.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div class="w3-bar w3-black">
+        <span class="branding w3-bar-item w3-mobile w3-button" href="#">RENT-A-bOAT</span>
+        <span class="w3-right w3-mobile">
+            <a class="w3-bar-item w3-button w3-mobile w3-hover-teal" href="#">Home</a>
+            <a class="w3-bar-item w3-button w3-mobile w3-hover-teal" href="#">Search</a>
+            <div class="w3-dropdown-hover w3-hide-small w3-hover-teal">
+                <button class="w3-button w3-hover-teal" title="Notifications">Manage Listings <i class="fa fa-caret-down"></i></button>
+                <div class="w3-dropdown-content w3-card-4 w3-bar-block ">
+                    <a href="#" class="w3-bar-item w3-button w3-hover-teal">ADD</a>
+                    <a href="#" class="w3-bar-item w3-button w3-hover-teal">MODIFY</a>
+                    <a href="#" class="w3-bar-item w3-button w3-hover-teal">DELETE</a>
+                </div>
+            </div>
+            <a class="w3-bar-item w3-button w3-mobile w3-hover-teal" href="#">Boat Locations</a>
+            <a class="w3-bar-item w3-button w3-mobile w3-hover-teal" href="#">About Us</a>
+        </span>
+    </div>
+
+    <div class=backdrop>
+        <br><br>
+        <h3><b>Please fill the form to add a new listing</b></h3>
+        <form>
+            <br>
+            <div class="listing">
+                <div class="row">
+                    <div class="column">
+                        <table class="tableadd" style="width:70%">
+                            <tr>
+                                <td class="trans"><label for="name">Company Name</label></td>
+                                <td><input type="text" id="name" name="name"></td>
+                            </tr>
+                            <tr>
+                                <td class="trans"><label for="name">Address</label></td>
+                                <td><input type="text" id="address" name="address" style="height:50px"></td>
+                            </tr>
+                            <tr>
+                                <td class="trans"><label for="name">Company URL</label></td>
+                                <td><input type="url" id="weburl" name="weburl"></td>
+                            </tr>
+                            <tr>
+                                <td class="trans"><label for="name">City</label></td>
+                                <td>
+                                    <select name='city' class="field-style field-split align-right">
+                                        <option value='select city'>Select City</option>
+                                        <option value='select city'>Cleveland</option>
+                                        <option value='select city'>Orwell</option>
+                                        <option value='select city'>Buffalo</option>
+                                        <option value='select city'>Albany</option>
+                                        <option value='select city'>Waterloo</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="trans"><label for="name">State</label></td>
+                                <td>
+                                    <select name='st' class="field-style field-split align-right">
+                                        <option value='select st'>Select State</option>
+                                        <option value='select st'>New York</option>
+                                        <option value='select st'>Mississippi</option>
+                                        <option value='select st'>Vermont</option>
+                                        <option value='select st'>Rhode Island</option>
+                                    </select>
+                            </tr>
+                            <tr>
+                                <td class="trans"><label for="name">Zip Code</label></td>
+                                <td><input type="text" id="zip" name="zip"></td>
+                            </tr>
+                            <tr>
+                                <td class="trans"><label for="name">Phone Number</label></td>
+                                <td> <input type="text" id="no" name="no"></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <table class="tableadd" style="width:30%">
+                        <tr>
+                            <td class="trans"><label id="Bname">Boat Name/Vessel Type</label></td>
+                            <td><input type="text" id="btname" name="name"></td>
+                        </tr>
+                        <tr>
+                            <td class="trans"><label for="Cname">Cruise Type</label></td>
+                            <td>
+                                <select name='ct' class="field-style field-split align-right">
+                                    <option value='select ct'>Select Cruise</option>
+                                    <option value='select ct'>Sunset Cruise</option>
+                                    <option value='select ct'>Party Cruise</option>
+                                    <option value='select ct'>Kayaks</option>
+                                    <option value='select ct'>Paddle Boat</option>
+                                    <option value='select ct'>Dinner Cruise</option>
+                                </select>
+                            </td>
+                        <tr>
+                            <td class="trans"><label for="Hname">Home Port</label></td>
+                            <td><input type="text" id="hp" name="hp"></td>
+                        </tr>
+                        <tr>
+                            <td class="trans"><label for="Wname">Waterways</label></td>
+                            <td><input type="text" id="ww" name="waterways"></td>
+                        </tr>
+                        <tr>
+                            <td class="trans"><label for="Lname">Location</label></td>
+                            <td><input type="text" id="loc" name="boataddress" style="height:50px"></td>
+                        </tr>
+                    </table>
+
+                </div>
+            </div>
+            <br>
+            <br>
+            <button type="submit" class="button buttonaction">SAVE</button>
+            <button type="submit" class="buttoncancel buttonaction">CANCEL</button>
+        </form>
+
+
+</div>
+</body>
+</html>
