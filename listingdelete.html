@@ -1,18 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>ListingsDelete</title>
-
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ListingsDeletePage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" media="screen" href="css/listings.css" />
     <link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
     <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/style.css">
-</head>
 
+</head>
 <body>
+
     <!-- Navbar -->
     <div class="w3-bar w3-black">
         <span class="branding w3-bar-item w3-mobile">RENT-A-bOAT</span>
@@ -28,36 +26,38 @@
                 </div>
             </div>
             <a class="w3-bar-item w3-button w3-mobile w3-hover-teal" href="boatloc.html">Boat Locations</a>
+            <a class="w3-bar-item w3-button w3-mobile w3-hover-teal" href="#">Stats</a>
             <a class="w3-bar-item w3-button w3-mobile w3-hover-teal" href="about_us.html">About Us</a>
         </span>
     </div>
 
-    <div class="backdrop">
-        <br>
-        <br>
-        <br>
-        <table class="tabledel w3-responsive " style="width:50%">
-            <tr class="tabledel">
-                <td>Grand Lady Cruises</td>
-                <td><button class="icondel"><i class="fa fa-trash" icon-8x></i></button></td>
-            </tr>
-            <tr class="tabledel">
-                <td>Dutch Apple Cruises</td>
-                <td><button class="icondel"><i class="fa fa-trash" icon-8x></i></button></td>
-            </tr>
-            <tr class="tabledel">
-                <td>Arrowhead Marina Rentals</td>
-                <td><button class="icondel"><i class="fa fa-trash" icon-8x></i></button></td>
-            </tr>
-            <tr class="tabledel">
-                <td>Low Bridge Charters</td>
-                <td><button class="icondel"><i class="fa fa-trash" icon-8x></i></button></td>
-            </tr>
-        </table>
-        <br>
-        <br>
-        <button type="submit" class="button buttonaction">CANCEL</button>
-    </div>
+    <div class=backdropimg>
+        <br><br><br>
 
+        <!-- page content -->
+        <div style="overflow-x: auto;">
+            <table class="tabledel trans">
+                <tr>
+                    <td class="colformatdel">Grand Lady Cruises</td>
+                    <td><button class="icondel"><i class="fa fa-trash" icon-8x></i></button></td>
+                </tr>
+                <tr>
+                    <td class="colformatdel">Dutch Apple Cruises</td>
+                    <td><button class="icondel"><i class="fa fa-trash" icon-8x></i></button></td>
+                </tr>
+                <tr>
+                    <td class="colformatdel">Arrowhead Marina Rentals</td>
+                    <td><button class="icondel"><i class="fa fa-trash" icon-8x></i></button></td>
+                </tr>
+                <tr>
+                    <td class="colformatdel">Low Bridge Charters</td>
+                    <td><button class="icondel"><i class="fa fa-trash" icon-8x></i></button></td>
+                </tr>
+            </table>
+            <br />
+            <button class="w3-button w3-teal buttoncancel">CANCEL</button>
+        </div>
+
+    </div>
 </body>
 </html>
