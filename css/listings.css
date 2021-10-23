@@ -3,41 +3,27 @@ body {
     font-family: Verdana, sans-serif;
 }
 
-.backdrop {
-    background-image: url("../img/back-min.jpg");
+.backdropimg {
+    background-image: url("../img/back.jpg");
     background-repeat: no-repeat;
-    padding: 1%;
+    background-attachment: static;
     background-size: cover;
-    height: 50vw;
-    margin: 0 1% 1% 1%;
-    background-size: cover;
-    overflow-x: auto;
-    display: flex;
+    background-color: black;
+    width: 100%;
 }
 
-.listing {
-    font-size: 18px;
-    line-height: 1.5;
-    
+* {
+    box-sizing: border-box;
 }
+
 .tabledel {
+    border-collapse: collapse;
     border: 1px solid black;
     border-color: black;
-    text-align: center;
-    border-collapse: collapse;
-    width: 100%;
-    height: 30px;
-    background: rgba(209,250,250,0.6);
-    
-    
 }
 
-
-.tableadd {
-    border-spacing: 0;
-    border: 0;
-    height: 50%;
-    text-align: left;
+.colformatdel {
+    text-align: center;
     padding: 12px;
 }
 
@@ -45,76 +31,111 @@ body {
     background: rgba(209,250,250,0.6);
 }
 
-.textcolor {
-    background:gray;
-}
-
-.row {
-    display: flex;
-    margin-left: 10px;
-    margin-right: 600px;
-}
-
-.column {
-    flex: 35%;
-}
 .icondel {
     background-color: darkcyan;
     color: white;
     margin: 8px 4px;
     font-size: 20px;
     cursor: pointer;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);    
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
-.button {
-    height: 30px;
-    width: 100px;
-    background-color: darkcyan;
-    color: white;
-    text-align: center;
-    border: 2px solid darkcyan;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-    font-size: 18px;
-    align-self: center;
-    margin-left: 500px;
-    cursor: pointer;
-}
 .buttoncancel {
-    height: 30px;
-    width: 100px;
-    background-color: darkcyan;
-    color: white;
-    text-align: center;
-    border: 2px solid darkcyan;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-    font-size: 18px;
     align-self: center;
-    margin-left: 10px;
-    cursor: pointer;
+    font-size: 15px;
+    text-align: center;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
-.buttonaction:active {
-    background-color: black;
-    box-shadow: 0 5px #666;
-    transform: translateY(4px);
+.buttonsave {
+    align-self: center;
+    font-size: 15px;
+    text-align: center;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
-@media screen and (max-width: 600px) {
-    table thead {
-        display: none;
+.container {
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+.textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+.textareainput {
+    width: 20%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+/*mobile*/
+@media only screen and (max-width: 600px) {
+    .tabledel {
+        width: 100%;
+        font-size: 11px;
     }
 
-    table td {
-        display: flex;
+    .buttoncancel {
+        margin-left: 150px;
+        margin-top: 10px;
     }
 
-        table td::before {
-            content: attr(tabledel);
-            font-weight: bold;
-            width: 120px;
-            min-width: 120px;
-        }
+    .buttonsave {
+        margin-left: 150px;
+        margin-top: 0;
+    }
 }
 
+/*tablet*/
+@media only screen and (min-width: 768px) {
+    .buttoncancel {
+        margin-left: 100px;
+    }
 
+    .buttonsave {
+        margin-inline: auto;
+        margin-right: -200px;
+        margin-left: 250px;
+    }
+}
+
+/*laptop*/
+@media only screen and (min-width: 992px) {
+    .backdropimg {
+        height: 50vw;
+    }
+
+    .tabledel {
+        width: 50%;
+        height: auto;
+    }
+
+    .buttoncancel {
+        margin-left: 400px;
+    }
+}
