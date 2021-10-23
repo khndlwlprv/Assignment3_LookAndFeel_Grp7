@@ -9,29 +9,30 @@
     <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
     <link rel="stylesheet" type="text/css" media="screen" href="css/listings.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <!-- Navbar -->
     <div class="w3-bar w3-black">
-        <span class="branding w3-bar-item w3-mobile w3-button" href="#">RENT-A-bOAT</span>
+        <span class="branding w3-bar-item w3-mobile">RENT-A-bOAT</span>
         <span class="w3-right w3-mobile">
-            <a class="w3-bar-item w3-button w3-mobile w3-hover-teal" href="#">Home</a>
+            <a class="w3-bar-item w3-button w3-mobile w3-hover-teal" href="index.html">Home</a>
             <a class="w3-bar-item w3-button w3-mobile w3-hover-teal" href="#">Search</a>
-            <div class="w3-dropdown-hover w3-hide-small w3-hover-teal">
-                <button class="w3-button w3-hover-teal" title="Notifications">Manage Listings <i class="fa fa-caret-down"></i></button>
-                <div class="w3-dropdown-content w3-card-4 w3-bar-block ">
-                    <a href="#" class="w3-bar-item w3-button w3-hover-teal">ADD</a>
-                    <a href="#" class="w3-bar-item w3-button w3-hover-teal">MODIFY</a>
-                    <a href="#" class="w3-bar-item w3-button w3-hover-teal">DELETE</a>
+            <div class="w3-dropdown-hover w3-hide-small w3-mobile w3-hover-teal">
+                <button class="w3-button w3-hover-teal w3-mobile " title="Notifications">Manage Listings <i class="fa fa-caret-down"></i></button>
+                <div class="w3-dropdown-content w3-card-4 w3-bar-block w3-mobile ">
+                    <a href="listingadd.html" class="w3-bar-item w3-button w3-hover-teal w3-mobile">Add</a>
+                    <a href="listingmodify.html" class="w3-bar-item w3-button w3-hover-teal w3-mobile">Modify</a>
+                    <a href="listingdelete.html" class="w3-bar-item w3-button w3-hover-teal w3-mobile">Delete</a>
                 </div>
             </div>
-            <a class="w3-bar-item w3-button w3-mobile w3-hover-teal" href="#">Boat Locations</a>
-            <a class="w3-bar-item w3-button w3-mobile w3-hover-teal" href="#">About Us</a>
+            <a class="w3-bar-item w3-button w3-mobile w3-hover-teal" href="boatloc.html">Boat Locations</a>
+            <a class="w3-bar-item w3-button w3-mobile w3-hover-teal" href="about_us.html">About Us</a>
         </span>
     </div>
 
-    <div class=backdrop>
+    <div class="backdrop">
         <br><br>
         <h3><b>Please fill the form to add a new listing</b></h3>
         <form>
@@ -126,6 +127,6 @@
         </form>
 
 
-</div>
+    </div>
 </body>
 </html>
