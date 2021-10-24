@@ -1,14 +1,47 @@
 <!DOCTYPE html>
 <html>
+<head>
+    <meta charset="utf-8">
+    <title>Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
-<body>
+<body >
+
+
+    <!-- Navbar -->
+    <div class="w3-bar w3-black">
+        <span class="branding w3-bar-item w3-mobile">RENT-A-bOAT</span>
+        <span class="w3-right w3-mobile">
+            <a class="w3-bar-item w3-button w3-mobile w3-hover-teal" href="index.html">Home</a>
+            <a class="w3-bar-item w3-button w3-mobile w3-hover-teal" href="#">Search</a>
+            <div class="w3-dropdown-hover w3-hide-small w3-mobile w3-hover-teal">
+                <button class="w3-button w3-hover-teal w3-mobile " title="Notifications">Manage Listings <i class="fa fa-caret-down"></i></button>
+                <div class="w3-dropdown-content w3-card-4 w3-bar-block w3-mobile ">
+                    <a href="listingadd.html" class="w3-bar-item w3-button w3-hover-teal w3-mobile">Add</a>
+                    <a href="listingmodify.html" class="w3-bar-item w3-button w3-hover-teal w3-mobile">Modify</a>
+                    <a href="listingdelete.html" class="w3-bar-item w3-button w3-hover-teal w3-mobile">Delete</a>
+                </div>
+            </div>
+            <a class="w3-bar-item w3-button w3-mobile w3-hover-teal" href="boatloc.html">Boat Locations</a>
+            <a class="w3-bar-item w3-button w3-mobile w3-hover-teal" href="stats.html">Stats</a>
+            <a class="w3-bar-item w3-button w3-mobile w3-hover-teal" href="about_us.html">About Us</a>
+        </span>
+    </div>
 
     <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
 
     <script>
         var xValues = ["Buffalo", "Fairport", "Ithaca", "Waterloo", "Watkins Glen", "Union Springs", "Clevelend"];
-        var yValues = [10,4,7,3,5,8,1];
-        var barColors = ["cyan", "green", "blue", "orange", "brown", "purple","pink"];
+        var yValues = [10, 4, 7, 3, 5, 8, 1];
+        var barColors = ["cyan", "green", "blue", "orange", "brown", "purple", "pink"];
 
         new Chart("myChart", {
             type: "bar",
@@ -20,6 +53,7 @@
                 }]
             },
             options: {
+                
                 legend: { display: false },
                 title: {
                     display: true,
@@ -33,7 +67,7 @@
                         }
                     }]
                 }
-            },
+            }
         });
 
     </script>
