@@ -9,67 +9,74 @@
     <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
-
-
 </head>
 
 
 
 <body>
-    <!-- Navbar -->
-    <div class="w3-bar w3-black">
-        <span class="branding w3-bar-item w3-mobile">RENT-A-bOAT</span>
-        <span class="w3-right w3-mobile">
-            <a class="w3-bar-item w3-button w3-mobile w3-hover-teal" href="index.html">Home</a>
-            <a class="w3-bar-item w3-button w3-mobile w3-hover-teal" href="#">Search</a>
-            <div class="w3-dropdown-hover w3-hide-small w3-mobile w3-hover-teal">
-                <button class="w3-button w3-hover-teal w3-mobile " title="Notifications">Manage Listings <i class="fa fa-caret-down"></i></button>
-                <div class="w3-dropdown-content w3-card-4 w3-bar-block w3-mobile ">
-                    <a href="listingadd.html" class="w3-bar-item w3-button w3-hover-teal w3-mobile">Add</a>
-                    <a href="listingmodify.html" class="w3-bar-item w3-button w3-hover-teal w3-mobile">Modify</a>
-                    <a href="listingdelete.html" class="w3-bar-item w3-button w3-hover-teal w3-mobile">Delete</a>
-                </div>
+    <div class="container-wrapper">
+        <div class="brand-labling">
+            <img src="../img/boat.svg" />
+            <span>RENT-A-bOAT</span>
+        </div>
+        <!-- Navbar -->
+        <div class="top-menu-wrapper">
+            <div class="list-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="searchpage.html">Search</a></li>
+                    <li>
+                        <a href="#">Manage Listings &#9662;</a>
+                        <ul class="dropdown">
+                            <li><a href="listingadd.html">Add</a></li>
+                            <li><a href="listingmodify.html">Modify</a></li>
+                            <li><a href="listingdelete.html">Delete</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="boatloc.html">Boat Locations</a></li>
+                    <li><a href="stats.html">Stats</a></li>
+                    <li><a href="about_us.html">About Us</a></li>
+                </ul>
             </div>
-            <a class="w3-bar-item w3-button w3-mobile w3-hover-teal" href="boatloc.html">Boat Locations</a>
-            <a class="w3-bar-item w3-button w3-mobile w3-hover-teal" href="stats.html">Stats</a>
-            <a class="w3-bar-item w3-button w3-mobile w3-hover-teal" href="about_us.html">About Us</a>
-        </span>
-    </div>
 
+        </div>
+    </div>
     <!-- Showcase -->
 
+    <div class="slide-wrapper">
+        <div class="slideshow-container">
 
-    <div class="slideshow-container">
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="../img/pic2.jpg" style="width:100%">
+                <div class="text-image1">
+                    Whether you’re planning a celebration or looking for a relaxing day, getting on the water
+                    is the perfect way. For drive-it-yourself rentals & captained experiences,
+                    RENT-A-bOAT is the easiest way to search and explore waters near NYC.
+                    Connect with boat owners to book online or list your boat to rent.
+                </div>
+            </div>
 
-        <div class="mySlides fade">
-            <div class="numbertext">1 / 3</div>
-            <img src="../DIS-project-final/img/pic2.jpg" style="width:100%">
-            <div class="text">Easy way to rent boats</div>
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="../img/pic4.jpg" style="width:100%">
+                <div class="text">Add Boat Listings</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="../img/pic3.jpg" style="width:100%">
+                <div class="text">Offering you best services</div>
+            </div>
+
         </div>
-
-        <div class="mySlides fade">
-            <div class="numbertext">2 / 3</div>
-            <img src="../DIS-project-final/img/pic4.jpg" style="width:100%">
-            <div class="text">Add Boat Listings</div>
-        </div>
-
-        <div class="mySlides fade">
-            <div class="numbertext">3 / 3</div>
-            <img src="../DIS-project-final/img/pic3.jpg" style="width:100%">
-            <div class="text">Offering you best services</div>
-        </div>
-
     </div>
-    <br>
 
     <div style="text-align:center">
         <span class="dot"></span>
         <span class="dot"></span>
         <span class="dot"></span>
     </div>
-
-
-
     <script>
 
         var slideIndex = 0;
