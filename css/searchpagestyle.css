@@ -7,7 +7,7 @@ html {
 height: 100%;
 font-family: Verdana,sans-serif;
 font-size: 20px;
-line-height: 1.5;
+line-height: 1.2;
 background-color: black;
 }
 
@@ -22,42 +22,43 @@ background-color: black;
 
 h1 {
 	font-family: 'Montserrat', sans-serif;
-	font-size:80;
+	font-size:40;
 	text-align: center;
-	font-weight: 100;
+	font-weight: 80;
 	color:white;
+    padding-top: 50px;
 }
 
 h3{
 	font-family: 'Montserrat', sans-serif;
 	color:white;
-	font-size:40;
+	font-size:25;
 	text-align: center;
 }
 
 .divone, .divtwo {
 	position:relative;
 	text-align: center;
-	top:10px;
+	top:8px
 }
 
-/*
+.form-style-9 h3{ padding-top: 50px;}
 .form-style-9 ul{
-	padding:0;
+	padding:10;
 	margin:0;
 	list-style:none;
 }
-*/
+
 .form-style-9 ul li{
 	display: block;
-	margin-bottom: 10px;
-	min-height: 35px;
+	margin-bottom: 15px;
+	min-height: 25px;
 }
 .form-style-9 ul li  .field-style{
 	box-sizing: border-box; 
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box; 
-	padding: 8px;
+	padding: 5px;
 	outline: none;
 	border: 1px solid #B0CFE0;
 	-webkit-transition: all 0.30s ease-in-out;
@@ -69,7 +70,7 @@ h3{
 	border:1px solid #B0CFE0;
 }
 .form-style-9 ul li .field-split{
-	width: 10%;
+	width: 15%;
 }
 .form-style-9 ul li .field-full{
 	width: 50%;
@@ -130,4 +131,11 @@ table.gridtable td {
 	border-color: #666666;
 	background-color: #ffffff;
 	overflow-x: auto;
+}
+
+/*mobile*/
+@media only screen and (max-width: 600px) {
+    .form-style-9 ul li .field-split{
+		width: 50%;
+	}
 }
