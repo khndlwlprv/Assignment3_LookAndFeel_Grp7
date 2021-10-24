@@ -1,132 +1,76 @@
 body {
 	background-color: black;
+	font-family: Verdana, sans-serif;
 }
 
-
-.container {
-	background-image: url(C:/Users/Purva/Source/Repos/Assignment3_LookAndFeel_Grp7/img/searchpgbg.jpg);
-	height: 100%;
-	background-position: center;
+.backdropimg {
+	background-image: url("../img/searchpgbg.jpg");
 	background-repeat: no-repeat;
+	background-attachment: static;
 	background-size: cover;
+	background-color: black;
+	width: 100%;
 }
 
-h1 {
-	font-family: 'Montserrat', sans-serif;
-	font-size:40;
-	text-align: center;
-	font-weight: 80;
-	color:white;
-    padding-top: 50px;
-}
-
-h3{
-	font-family: 'Montserrat', sans-serif;
-	color:white;
-	font-size:25;
-	text-align: center;
+* {
+	box-sizing: border-box;
 }
 
 .divone, .divtwo {
-	position:relative;
+	position: relative;
 	text-align: center;
-	top:8px
+	top: 8px
 }
 
-.form-style-9 h3{ padding-top: 50px;}
-.form-style-9 ul{
-	padding:10;
-	margin:0;
-	list-style:none;
+h1 {
+	font-family: Verdana, sans-serif;
+	font-size: 30px;
+	text-align: center;
+	font-weight: 80;
+	color: white;
+	padding-top: 50px;
 }
 
-.form-style-9 ul li{
-	display: block;
-	margin-bottom: 15px;
-	min-height: 25px;
-}
-.form-style-9 ul li  .field-style{
-	box-sizing: border-box; 
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box; 
-	padding: 5px;
-	outline: none;
-	border: 1px solid #B0CFE0;
-	-webkit-transition: all 0.30s ease-in-out;
-	-moz-transition: all 0.30s ease-in-out;
-	-ms-transition: all 0.30s ease-in-out;
-	-o-transition: all 0.30s ease-in-out;
-}.form-style-9 ul li  .field-style:focus{
-	box-shadow: 0 0 5px #B0CFE0;
-	border:1px solid #B0CFE0;
-}
-.form-style-9 ul li .field-split{
-	width: 15%;
-}
-.form-style-9 ul li .field-full{
-	width: 50%;
-}
-.form-style-9 ul li input.align-left{
-	float:center;
-}
-.form-style-9 ul li input.align-right{
-	float:center;
-}
-.form-style-9 ul li textarea{
-	width: 50%;
-	height: 100px;
+h3 {
+	font-family: Verdana, sans-serif;
+	color: white;
+	font-size: 25px;
+	text-align: center;
 }
 
-.form-style-9 ul li input[type="button"], 
-.form-style-9 ul li input[type="submit"] {
-	-moz-box-shadow: inset 0px 1px 0px 0px #3985B1;
-	-webkit-box-shadow: inset 0px 1px 0px 0px #3985B1;
-	box-shadow: inset 0px 1px 0px 0px #3985B1;
-	background-color: green;
-	border: 1px solid green;
-	display: inline-block;
-	cursor: pointer;
-	color: #FFFFFF;
-	padding: 8px 18px;
-	text-decoration: none;
-	font: 12px Arial, Helvetica, sans-serif;
-}
-.form-style-9 ul li input[type="button"]:hover, 
-.form-style-9 ul li input[type="submit"]:hover {
-	background: linear-gradient(to bottom,green 5%, green 100%);
-	background-color: green;
-}
 table.gridtable {
 	font-family: verdana,arial,sans-serif;
-	font-size:11px;
-	color:#333333;
+	font-size: 11px;
+	color: #333333;
 	border-width: 1px;
 	border-color: #666666;
 	border-collapse: collapse;
-	margin-left:auto;
-	margin-right:auto;
-	overflow-x:auto;
-}
-table.gridtable th {
-	border-width: 1px;
-	padding: 8px;
-	border-style: solid;
-	border-color: #666666;
-	background-color: #dedede;
-	overflow-x: auto;
-}
-table.gridtable td {
-	border-width: 1px;
-	padding: 8px;
-	border-style: solid;
-	border-color: #666666;
-	background-color: #ffffff;
+	margin-left: auto;
+	margin-right: auto;
 	overflow-x: auto;
 }
 
-/*mobile*/
-@media only screen and (max-width: 600px) {
-    .form-style-9 ul li .field-split{
-		width: 50%;
+table.gridtable th {
+		border-width: 1px;
+		padding: 8px;
+		border-style: solid;
+		border-color: #666666;
+		background-color: #dedede;
+		overflow-x: auto;
+}
+
+table.gridtable td {
+		border-width: 1px;
+		padding: 8px;
+		border-style: solid;
+		border-color: #666666;
+		background-color: #ffffff;
+		overflow-x: auto;
+}
+
+/*laptop*/
+@media only screen and (min-width: 992px) {
+	.backdropimg {
+		height: 50vw;
 	}
 }
